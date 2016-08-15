@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="spa">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="/javascripts/Angular.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p> Home page</p>
+
+    <a ui-sref="state1">state 1</a>
+    <br>
+    <a ui-sref="state2">state 2</a>
+    <div ui-view="main"></div>
+
+  </body>
+</html>
